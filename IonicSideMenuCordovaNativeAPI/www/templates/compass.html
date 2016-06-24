@@ -1,0 +1,17 @@
+﻿<ion-view view-title="Compass">
+    <ion-content>
+        <button class="button button-block button-positive" ng-click="watchHeading()">
+            Start Watching Compass
+        </button>
+        <button class="button button-block button-positive" ng-click="clearWatch()">
+            Stop Watching Compass
+        </button>
+        <label>Infos:</label>
+        <div ng-bind="MagneticHeading"></div>
+        <button class="button button-block button-positive" ng-click="getCurrentHeading()">
+            Current WatchingInfo Compass
+        </button>
+        <label>Infos:</label>
+        <div ng-bind="CurrentMagneticHeading"></div>
+    </ion-content>
+</ion-view>

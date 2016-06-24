@@ -1,0 +1,18 @@
+﻿<ion-view view-title="Storage">
+    <ion-content>
+        <div class ="list">
+            <label class ="item item-input"><input type ="text" placeholder="Key" ng-model="StorageModel.Key"></label>
+            <label class ="item item-input"><input type ="text" placeholder="Value" ng-model="StorageModel.Value"></label>
+            <label class="item item-input"><input type="text" ng-disabled="true" placeholder="Saved Value" ng-model="StorageModel.SavedValue"></label>
+            <button class="button button-block button-positive" ng-click="SaveItem()">
+                Save Item
+            </button>
+            <button class="button button-block button-positive" ng-click="GetItem()">
+                Get Item
+            </button>
+            <button class="button button-block button-positive" ng-click="DeleteItem()">
+                Delete Item
+            </button>
+        </div>
+    </ion-content>
+</ion-view>

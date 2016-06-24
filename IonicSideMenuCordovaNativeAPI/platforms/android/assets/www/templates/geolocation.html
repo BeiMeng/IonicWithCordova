@@ -1,0 +1,21 @@
+﻿<ion-view view-title="Accelerometer">
+    <ion-content>
+        <button class="button button-block button-positive" ng-click="startWatchPosition()">
+            Start Geolocation
+        </button>
+        <button class="button button-block button-positive" ng-click="stopWatchPosition()">
+            Stop Geolocation
+        </button>
+        <label>Latitude:</label>
+        <div ng-bind="GeolocationModel.Latitude"></div>
+        <label>Longitude:</label>
+        <div ng-bind="GeolocationModel.Longitude"></div>
+        <button class="button button-block button-positive" ng-click="getCurrentPosition()">
+            Get Current position
+        </button>
+        <label>CurrentLatitude:</label>
+        <div ng-bind="GeolocationModel.CurrentLatitude"></div>
+        <label>CurrentLongitude:</label>
+        <div ng-bind="GeolocationModel.CurrentLongitude"></div>
+    </ion-content>
+</ion-view>

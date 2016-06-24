@@ -1,0 +1,17 @@
+﻿<ion-view view-title="Accelerometer">
+    <ion-content>
+        <button class="button button-block button-positive" ng-click="watchAcceleration()">
+            Start Watching
+        </button>
+        <button class="button button-block button-positive" ng-click="clearWatch()">
+            Stop Watching
+        </button>
+        <label>Infos:</label>
+        <div ng-bind="DeviceMotionModel.AccelerationX"></div>
+        <button class="button button-block button-positive" ng-click="getAcceleration()">
+            Current WatchingInfo
+        </button>
+        <label>Infos:</label>
+        <div ng-bind="DeviceMotionModel.CurrentAccelerationX"></div>
+    </ion-content>
+</ion-view>

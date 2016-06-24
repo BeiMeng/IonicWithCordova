@@ -1,0 +1,18 @@
+﻿<ion-view view-title="database">
+    <ion-content>
+        <div class="list">
+            <label class="item item-input"><input type="text" ng-disabled="true" placeholder="id" ng-model="DatabaseModel.Id"></label>
+            <label class="item item-input"><input type="text" placeholder="Key" ng-model="DatabaseModel.Key"></label>
+            <label class="item item-input"><input type="text" placeholder="Value" ng-model="DatabaseModel.Value"></label>
+            <button class="button button-block button-positive" ng-click="SaveItem()">
+                Save Item
+            </button>
+            <button class="button button-block button-positive" ng-click="GetItems()">
+                Get Items
+            </button>
+            <button class="button button-block button-positive" ng-click="DeleteItem()">
+                Delete Item
+            </button>
+        </div>
+    </ion-content>
+</ion-view>
