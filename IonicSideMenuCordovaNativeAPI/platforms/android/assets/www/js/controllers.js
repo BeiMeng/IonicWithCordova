@@ -252,6 +252,7 @@ angular.module('starter.controllers', [])
     };
 })
 .controller('CameraCtrl', function ($scope, $cordovaCamera) {
+    $scope.ImgUrl = "AA";
     var options = {
         quality: 50,
         destinationType: Camera.DestinationType.DATA_URL,
@@ -264,10 +265,12 @@ angular.module('starter.controllers', [])
         saveToPhotoAlbum: false,
         correctOrientation: true
     };
+    $scope.getPicture = function () {
+        $cordovaCamera.getPicture(options).then(function (imageData) {
+            $scope.ImgUrl = "data:image/jpeg;base64," + imageData;
+        }, function (err) {
+            // error
+        });
+    };
 
-    $cordovaCamera.getPicture(options).then(function (imageData) {
-        $scope.ImgUrl = "data:image/jpeg;base64," + imageData;
-    }, function (err) {
-        // error
-    });
 });
